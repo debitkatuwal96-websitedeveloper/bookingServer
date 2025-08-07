@@ -20,7 +20,7 @@ connectDB();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'https://bookingbheema.netlify.app/',
+  origin: process.env.CLIENT_URL || 'http://bookingbheema.netlify.app/',
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE']
 }));
